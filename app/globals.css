@@ -76,17 +76,17 @@ select {
   -webkit-tap-highlight-color: transparent;
 }
 
-button,
+/* button, */
 input,
 textarea,
 select {
   font: inherit;
 }
 
-a {
+/* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 button {
   cursor: pointer;

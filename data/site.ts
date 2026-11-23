@@ -27,7 +27,7 @@ export const siteConfig = {
   },
 
   // Confirm the firm's preferred WhatsApp number before enabling.
-  whatsappNumber: "",
+  whatsappNumber: "254701829820",
 
   responseTime: "Within 24 business hours",
 
@@ -75,3 +75,4 @@ export const navigation: NavigationItem[] = [
   { label: "Our Team", href: "/our-team" },
   { label: "Contact", href: "/contact" },
 ];
+

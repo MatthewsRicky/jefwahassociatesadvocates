@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 
+import SiteHeader from "@/components/layout/SiteHeader";
+import SiteFooter from "@/components/layout/SiteFooter";
+import WhatsAppButton from "@/components/shared/WhatsAppButton";
+
 const displayFont = Cormorant_Garamond({
   variable: "--font-display",
   subsets: ["latin"],
@@ -46,7 +50,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}>
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        <main>{children}</main>
+        <SiteFooter />
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }
